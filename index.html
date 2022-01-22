@@ -9,10 +9,107 @@
     <script src="src/main.js"></script>
   </head>
   <body>
-    <header class="app-header">
-      <h1>안녕하세요 <span class="user_name">OOO님</span></h1>
-      <p class="user_affiliation">8사단 정보통신대대 6급양대</p>
+    <header id="header">
+      <h1>안녕하세요 <span class="user--name">OOO님</span></h1>
+      <p class="user--affiliation">8사단 정보통신대대 6급양대</p>
     </header>
-    <div class="app-body"></div>
+    <nav id="categories">
+      <a href="#">
+        <div class="categories__item">
+          <div class="item__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="23"
+              viewBox="0 0 25 23"
+            >
+              <g id="filter_frames" transform="translate(0.017 -0.268)">
+                <rect
+                  id="Path"
+                  width="25"
+                  height="23"
+                  transform="translate(-0.017 0.268)"
+                  fill="rgba(0,0,0,0)"
+                />
+                <path
+                  id="Icon"
+                  d="M18.9,22H2.1A2.054,2.054,0,0,1,0,20V6A2.054,2.054,0,0,1,2.1,4H6.3l4.2-4,4.2,4h4.2A2.054,2.054,0,0,1,21,6V20A2.054,2.054,0,0,1,18.9,22ZM2.1,6V20H18.9V6H14.2L10.543,2.5,6.846,6ZM16.8,18H4.2V8H16.8V18ZM6.3,10v6h8.4V10Z"
+                  transform="translate(2.983 0.268)"
+                  fill="#ff8d65"
+                />
+              </g>
+            </svg>
+          </div>
+          <span>전체 식단 정보</span>
+        </div>
+      </a>
+      <a href="#">
+        <div class="categories__item">
+          <div class="item__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="21"
+              viewBox="0 0 22 21"
+            >
+              <path
+                id="Icon"
+                d="M4,21H0V8.4H4V21Zm13,0H8a2.054,2.054,0,0,1-2-2.1V8.4a2.1,2.1,0,0,1,.59-1.481L13.17,0l1.06,1.1a1.63,1.63,0,0,1,.44,1.113l-.03.336-.95,4.8H20a2.055,2.055,0,0,1,2,2.1v2.1a2.163,2.163,0,0,1-.14.766l-3.02,7.4A1.984,1.984,0,0,1,17,21ZM12.34,3.843,8,8.4V18.9h9l3-7.35V9.45H11.23l1.109-5.607Z"
+                fill="#ff8d65"
+              />
+            </svg>
+          </div>
+          <span>레시피</span>
+        </div>
+      </a>
+      <a href="#">
+        <div class="categories__item">
+          <div class="item__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="23"
+              viewBox="0 0 24 23"
+            >
+              <g id="people_outline" transform="translate(0.134 -0.268)">
+                <rect
+                  id="Path"
+                  width="24"
+                  height="23"
+                  transform="translate(-0.134 0.268)"
+                  fill="rgba(0,0,0,0)"
+                />
+                <path
+                  id="Icon"
+                  d="M21,14H16.8V12.25a4.136,4.136,0,0,0-2.058-3.44c2.516.263,6.258,1.4,6.258,3.44V14Zm-6.3,0H0V12.25c0-2.3,4.785-3.5,7.35-3.5s7.35,1.2,7.35,3.5V14ZM7.35,10.75A10.467,10.467,0,0,0,2.457,12h9.786A10.464,10.464,0,0,0,7.35,10.75ZM13.65,7a3.8,3.8,0,0,1-1.574-.349,5.255,5.255,0,0,0,0-6.3A3.772,3.772,0,0,1,13.65,0a3.6,3.6,0,0,1,3.676,3.5A3.6,3.6,0,0,1,13.65,7ZM7.35,7A3.594,3.594,0,0,1,3.676,3.5,3.594,3.594,0,0,1,7.35,0a3.6,3.6,0,0,1,3.676,3.5A3.6,3.6,0,0,1,7.35,7Zm0-5A1.541,1.541,0,0,0,5.776,3.5a1.577,1.577,0,0,0,3.149,0A1.541,1.541,0,0,0,7.35,2Z"
+                  transform="translate(0.866 5.268)"
+                  fill="#ff8d65"
+                />
+              </g>
+            </svg>
+          </div>
+          <span>SNS</span>
+        </div>
+      </a>
+      <a href="#">
+        <div class="categories__item">
+          <div class="item__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <path
+                id="Icon"
+                d="M0,21v0L.01,2.1A2.1,2.1,0,0,1,2.1,0H18.9A2.1,2.1,0,0,1,21,2.1V14.7a2.1,2.1,0,0,1-2.1,2.1H4.2L0,21ZM2.1,2.1V15.929l.609-.61.62-.62H18.9V2.1H2.1Zm9.45,10.5H9.45V10.5h2.1v2.1Zm0-4.2H9.45V4.2h2.1V8.4Z"
+                fill="#ff8d65"
+              />
+            </svg>
+          </div>
+          <span>개선사항</span>
+        </div>
+      </a>
+    </nav>
   </body>
 </html>
