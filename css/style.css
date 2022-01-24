@@ -181,7 +181,7 @@ button {
     color: var(--color-light-grey);
   }
 
-  #menus .menus__item .item__content .content--title {
+  #menus .menus__item .item__content .content--menu:first-child {
     color: var(--color-black);
     font-size: var(--font-medium);
   }
