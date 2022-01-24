@@ -51,7 +51,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-dark-grey);
 }
 
 ul {
@@ -68,7 +68,7 @@ button {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
-  /* header */
+  /* Header */
   #header {
     width: 100%;
     padding: 30px 0 0 30px;
@@ -88,6 +88,7 @@ button {
     color: var(--color-orange);
   }
 
+  /* Nav */
   #categories {
     display: flex;
     justify-content: space-between;
@@ -128,5 +129,72 @@ button {
     background-color: var(--color-white);
     padding: 15%;
     border-radius: 50%;
+  }
+
+  /* Menu */
+  #menus {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    overflow: scroll;
+    margin-top: 30px;
+    padding: 10px 60px;
+  }
+  #menus a {
+    margin: 20px;
+  }
+  #menus .menus__item {
+    width: 250px;
+    min-height: 420px;
+    background-color: var(--color-light-orange);
+    box-shadow: 1px 3px 6px var(--color-bright-grey);
+    border-radius: var(--size-border-radius-large);
+    padding: 20px;
+    position: relative;
+  }
+
+  #menus .menus__item .item__img {
+    width: 185px;
+    height: 175px;
+    border-radius: 50%;
+    background-color: var(--color-light-grey);
+    overflow: hidden;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+  }
+
+  #menus .menus__item .item__info {
+    padding: 5px;
+    height: 95px;
+    text-align: center;
+    color: var(--color-white);
+    writing-mode: tb-rl;
+    background-color: var(--color-orange);
+    position: absolute;
+    top: 0px;
+    right: 20px;
+  }
+
+  #menus .menus__item .item__content {
+    margin-top: 150px;
+    color: var(--color-light-grey);
+  }
+
+  #menus .menus__item .item__content .content--title {
+    color: var(--color-black);
+    font-size: var(--font-medium);
+  }
+
+  #menus .menus__item .item__content .content--menu {
+    margin: 5px 0;
+  }
+
+  #menus .menus__item .content--calorie {
+    color: var(--color-black);
+    font-size: var(--font-medium);
+    font-weight: var(--weight-bold);
+    position: absolute;
+    bottom: 0px;
   }
 }
